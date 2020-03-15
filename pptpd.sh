@@ -4,3 +4,13 @@ echo "please insert the valid info for create  vpn server "
 echo "Don't worry ..."
 echo "please insert (Y) key to Start... "
 
+read ykey
+
+if [[ ( $ykey == "y"  ]]; then
+
+
+
+
+else
+echo "By ..!"
+fi
