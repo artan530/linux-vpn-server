@@ -11,10 +11,14 @@ if [ $ykey == "y"  ]
 FILE=/etc/pptpd.conf
 if [[ -f "$FILE" ]] 
 then
-echo "PPTPD Is Exist" 
+echo "PPTPD Service Is Exist" 
 else
-echo "pptpd not found ... " 
+echo "pptpd service not found ... " 
 echo $(apt-get install pptpd -y )
+echo "install pptpd"
+echo ""
+echo "please restart script ... "
+echo ""
 fi
 else
 echo "by..!"
