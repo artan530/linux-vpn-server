@@ -6,11 +6,9 @@ echo "please insert (y) key to Start... "
 
 read ykey
 
-if [[ ( $ykey == "y"  ]]; then
-
-
-
-
+if [ $ykey == "y"  ]
+ then
+echo "strat..."
 else
-echo "By ..!"
+echo "by..!"
 fi
