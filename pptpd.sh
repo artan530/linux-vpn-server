@@ -15,6 +15,11 @@ echo "PPTPD Service Is Exist"
 echo ""
 echo "Please Insert Ip Server For Example : 192.114.16.112 "
 read ipserver
+if [[ $ipserver =~ ^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+  echo "success"
+else
+  echo "fail ip Format"
+fi
 echo "Please insert User Ip Range For Example : 192.114.16.113-120 "
 read userip
 else
